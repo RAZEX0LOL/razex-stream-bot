@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "commands": [
+    {
+      "name": "hello",
+      "aliases": ["hi"],
+      "type": "text",
+      "minRole": "everyone",
+      "allowedUsers": [],
+      "cooldownSeconds": 0,
+      "userCooldownSeconds": 0,
+      "config": {
+        "response": "Hello, {user}!"
+      }
+    },
+    {
+      "name": "roll",
+      "aliases": [],
+      "type": "text",
+      "minRole": "everyone",
+      "allowedUsers": [],
+      "cooldownSeconds": 0,
+      "userCooldownSeconds": 10,
+      "config": {
+        "response": "{user} rolled {random:1-100}."
+      }
+    }
+  ]
+}

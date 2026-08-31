@@ -1,0 +1,29 @@
+{
+  "name": "razex-stream-bot",
+  "version": "0.1.0",
+  "description": "A dependency-free Twitch chat automation core with commands, activity, loyalty, timers, and a local demo dashboard.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "author": "Rasul Khattaev",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/live-bot.js",
+    "demo": "node src/demo-server.js",
+    "test": "node --test",
+    "check": "node --test && node scripts/check-public-safety.mjs"
+  },
+  "keywords": [
+    "twitch",
+    "chatbot",
+    "streaming",
+    "eventsub",
+    "irc",
+    "obs"
+  ]
+}
